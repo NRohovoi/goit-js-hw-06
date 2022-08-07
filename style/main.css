@@ -1,0 +1,45 @@
+
+a {
+    text-decoration: none;
+    padding: 20px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    color: black;
+    border-radius: 15px;
+    background-color: rgb(93, 93, 167);
+    margin: 10px;
+}
+ul {
+    text-decoration: none;
+}
+button {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgb(93, 93, 167);
+    cursor: pointer;
+}
+#counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.hero-title {
+    text-align: center;
+}
+
+#validation-input {
+    border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+    border-color: #4caf50;
+}
+
+#validation-input.invalid {
+    border-color: #f44336;
+}
