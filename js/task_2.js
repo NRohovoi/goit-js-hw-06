@@ -15,8 +15,12 @@ const ingredients = [
   "Condiments",
 ];
 
-const listEl = document.querySelector('#ingredients');
+const arrayOfNewItem = [];
 
-const newItem = ingredients.reduce((str, item) => str + `<li>${item}</li>`, "");
-
-listEl.innerHTML = newItem;
+const toCreateNewEl = ingredients.map(element => {
+  const newItem = document.createElement('li');
+  newItem.textContent = element;
+  newItem.classList = ('item');
+  const newCreatedItems = arrayOfNewItem.push(newItem);
+})
+const listEl = document.querySelector('#ingredients').append(...arrayOfNewItem);
